@@ -1,4 +1,4 @@
-var milkcocoa = new Milkcocoa("https://io-oi6aqv4vb.mlkcca.com");
+var milkcocoa = new MilkCocoa("https://io-oi6aqv4vb.mlkcca.com");
 
 function clickChannel(ch){
     sendChannel(ch);
