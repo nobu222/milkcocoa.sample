@@ -1,18 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <title>simple chat!</title>
-  <script src="http://cdn.mlkcca.com/v0.2.8/milkcocoa.js"></script>
-  <script src="remocon.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Milkcocoa Remocon App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/demo.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 </head>
+
 <body>
-<div id="remocon">
-	<button name="button" onClick="clickEvent()" data-content="content1">content1</button>
-	<button name="button" onClick="clickEvent()" data-content="content2">content2</button>
-	<button name="button" onClick="clickEvent()" data-content="content3">content3</button>
-	<button name="button" onClick="clickEvent()" data-content="content4">content4</button>
-	<button name="button" onClick="clickEvent()" data-content="content5">content5</button>
-</div>
+
+    <div class="site-wrapper">
+
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">Remocon</h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="#">screen1</a>
+                                </li>
+                                <li><a href="#">screen2</a>
+                                </li>
+                                <li><a href="#">screen3</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="inner cover">
+                    <!-- <h1 class="cover-heading">Push key</h1>
+            <p class="lead">Please any push key.<br>
+            You can manipulate the screen from the controller.</p> -->
+                    <p class="lead">
+                        <a href="#" data-chennel="1" class="btn btn-default btn-circle btn-xl">channel1</a>&nbsp;
+                        <a href="#" data-chennel="2" class="btn btn-default btn-circle btn-xl">channel2</a>&nbsp;
+                        <a href="#" data-chennel="3" class="btn btn-default btn-circle btn-xl">channel3</a>
+                    </p>
+                    <p class="lead">
+                        <a href="#" data-chennel="4" class="btn btn-default btn-circle btn-xl">channel4</a>&nbsp;
+                        <a href="#" data-chennel="5" class="btn btn-default btn-circle btn-xl">channel5</a>&nbsp;
+                        <a href="#" data-chennel="6" class="btn btn-default btn-circle btn-xl">channel6</a>
+                    </p>
+                    <div style="padding: 25px;"></div>
+                    <p class="lead clearfix">
+                        <a href="#" class="arrow-left"></a>
+                        <a href="#" class="arrow-right"></a>
+                    </p>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
