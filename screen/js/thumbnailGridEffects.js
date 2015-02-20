@@ -88,7 +88,7 @@
 					case 2 : newImages = allImages.page3; break;
 					case 3 : newImages = allImages.page4; break;
 					default : newImages = allImages.page1; break;
-				};
+				}
 
 				items.forEach( function( el ) {
 					var itemChild = el.querySelector( 'a' );
@@ -119,7 +119,7 @@
 							// now apply that same class to the items that got no children (special case)
 							if ( !el.hasChildNodes() ) {
 								classie.add( el, 'tt-empty' );
-							};
+							}
 						} );
 						// remove the "effect" class
 						classie.remove( grid, 'tt-effect-active' );

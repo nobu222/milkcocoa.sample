@@ -76,6 +76,14 @@ body {
   line-height: 4.33;
   border-radius: 35px;
 }
+.btn-circle.btn-warning {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 35px;
+  line-height: 1.55;
+  border-radius: 35px;
+}
 
 .arrow-right {
   display: block;
@@ -206,4 +214,36 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-remove:before {
+  content: "\e014";
+}
+
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+
+.glyphicon-remove-circle:before {
+  content: "\e088";
 }

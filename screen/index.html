@@ -23,54 +23,27 @@
     
     <section id="yt_link" class="tt-grid-wrapper">
       <nav class="button">
-        <a class="tt-current">page1</a><a>page2</a>
+        <a class="tt-current" id="page1">page1</a><a id="page2">page2</a>
       </nav>
       <ul class="tt-grid tt-effect-slide">
         <li class="video_image"><a href="http://www.youtube.com/watch?v=wuaD9yG4Fdw"><img src="https://i.ytimg.com/vi/wuaD9yG4Fdw/mqdefault.jpg" alt="img01"/></a></li>
-        <li><a href="https://www.youtube.com/watch?v=9iJCGcDmygo"><img src="https://i.ytimg.com/vi/9iJCGcDmygo/mqdefault.jpg" alt="img02"/></a></li>
-        <li><a href="https://www.youtube.com/watch?v=RuyquPuOEB8"><img src="https://i.ytimg.com/vi/RuyquPuOEB8/mqdefault.jpg" alt="img03"/></a></li>
-        <li><a href="https://www.youtube.com/watch?v=KaLP9DZ2ZeI"><img src="https://i.ytimg.com/vi/KaLP9DZ2ZeI/mqdefault.jpg" alt="img04"/></a></li>
-        <li><a href="https://www.youtube.com/watch?v=7tOLxawlHMs"><img src="https://i.ytimg.com/vi/7tOLxawlHMs/mqdefault.jpg" alt="img05"/></a></li>
-        <li><a href="https://www.youtube.com/watch?v=uenweW0wBAE"><img src="https://i.ytimg.com/vi/uenweW0wBAE/mqdefault.jpg" alt="img06"/></a></li>
+        <li class="video_image"><a href="https://www.youtube.com/watch?v=9iJCGcDmygo"><img src="https://i.ytimg.com/vi/9iJCGcDmygo/mqdefault.jpg" alt="img02"/></a></li>
+        <li class="video_image"><a href="https://www.youtube.com/watch?v=RuyquPuOEB8"><img src="https://i.ytimg.com/vi/RuyquPuOEB8/mqdefault.jpg" alt="img03"/></a></li>
+        <li class="video_image"><a href="https://www.youtube.com/watch?v=KaLP9DZ2ZeI"><img src="https://i.ytimg.com/vi/KaLP9DZ2ZeI/mqdefault.jpg" alt="img04"/></a></li>
+        <li class="video_image"><a href="https://www.youtube.com/watch?v=7tOLxawlHMs"><img src="https://i.ytimg.com/vi/7tOLxawlHMs/mqdefault.jpg" alt="img05"/></a></li>
+        <li class="video_image"><a href="https://www.youtube.com/watch?v=uenweW0wBAE"><img src="https://i.ytimg.com/vi/uenweW0wBAE/mqdefault.jpg" alt="img06"/></a></li>
       </ul>
       
     </section>
 </div><!-- end of #wrapper -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.0/jquery.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/thumbnailGridEffects.js"></script>
+    <!-- <script src="js/thumbnailGridEffects.js"></script> -->
     <script src="js/jquery.magnific-popup.js"></script>
     
     <script src="http://cdn.mlkcca.com/v0.2.8/milkcocoa.js"></script>
     <script src="./js/screen.js"></script>
     <script>
-    $(function($) {
-        $('#yt_link').magnificPopup({
-            delegate: 'a',
-            type: 'iframe',
-            iframe: {
-                markup: '<div class="mfp-iframe-scaler">' +
-                    '<div class="mfp-close"></div>' +
-                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-                    '<div class="mfp-title">Some caption</div>' +
-                    '</div>'
-            },
-            gallery: {
-                enabled: true
-            },
-            callbacks: {
-                markupParse: function(template, values, item) {
-                    values.title = item.el.attr('title');
-                }
-            },
-            disableOn: function() {
-                if ($(window).width() < 480) {
-                    return false;
-                }
-                return true;
-            }
-        });
-    });
     </script>
 </body>
 
