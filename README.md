@@ -1,0 +1,7 @@
+# milkcocoa.sample
+milkcocoaで複数画面同期Eventを発生させるためのデモ
+
+screen以下にアクセスするとYoutubeギャラリーが表示されます。
+controller以下にアクセスするとリモコンが表示されます。
+
+リモコンのチャンネルボタンを押すとscreenのYoutubeが再生されます。
